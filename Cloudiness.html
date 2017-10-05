@@ -5,7 +5,7 @@
 
   <!-- <meta charset="UTF-8"> -->
   <meta name="viewport" content="width device-width, initial-scale=1">
-  <title>Web Visualization Dashboard</title>
+  <title>Cloudiness</title>
   
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -63,26 +63,23 @@
 
       <!-- Columns have 12 areas of width to work with. -->
 
-      <!-- Two-thirds of screen (6/12) -->
+      <!-- Two-thirds of screen (8/12) -->
       <div class="col-md-6 well" >
 
         <!-- 1st row and only col in this row for the diagram title -->
-          <h1>Summary: Latitude vs X</h1>
-           
-          <figure class="float-left">
-            <img src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=300 width=300>
-          </figure>
+          <h1>Cloudiness</h1>
 
-          <hr>    
+          <hr> <!-- Use this to separate content in the HTML page -->
           
-          <p class="right-para">The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis we first pulled data from the Open Weather Map API, to assemble data on over 500 cities.</p>
-
-          <p class="right-para">After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <figure> 
+            <img class="img-responsive" src= "LatvsCloudiness.png" alt = "Latitude vs Temperature" height=400 width=500>
+          </figure>  
+          
+          <p class="margin-para"> Cloudiness does not seem to follow any specific pattern (at least as of the current time of year this graph was plotted), and seems independent of latitude. In looking at the graph it does look like a LOT of cities across the various latitudes are currently experiencing 0% cloudiness.</p>
            
          
       <!-- End of column 1 of 2 -->
-        </div><!-- <div class="col-md-6 well" > -->
-      
+      </div> <!-- div class="col-md-6 well" -->
 
       <!-- Latter of screen (4/12) -->
       <div class="col-md-4 well margin-left-20">
@@ -102,7 +99,7 @@
 	        </div>  
 	        
 	        <div class="col-md-4">       
-			    <figure>
+			    <figure >
 	              <a href="Humidity.html">
 	              <img class = "img-responsive" src= "LatvsHumidity.png" alt = "Latitude vs Humidity" height=200 width=200></a> 
 	            </figure>
@@ -112,7 +109,7 @@
         <div class="row">
         
         	<div class = "col-md-4"> 
-	          <figure>
+	          <figure class = "fig-blue-border">
 	            <a href="Cloudiness.html">
 	            <img class = "img-responsive" src= "LatvsCloudiness.png" alt = "Latitude vs Cloudiness" height=200 width=200></a> 
 	          </figure> 

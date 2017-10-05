@@ -3,9 +3,8 @@
 
 <head>
 
-  <!-- <meta charset="UTF-8"> -->
-  <meta name="viewport" content="width device-width, initial-scale=1">
-  <title>Web Visualization Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Maximum Temperature</title>
   
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -30,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
        </button>
-        <a class="navbar-brand border-fill" href="index.html">Latitude</a>
+        <a class="navbar-brand border-fill" href="#">Latitude</a>
       </div> <!-- div class="navbar-header" -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,26 +62,21 @@
 
       <!-- Columns have 12 areas of width to work with. -->
 
-      <!-- Two-thirds of screen (6/12) -->
+      <!-- Two-thirds of screen (8/12) -->
       <div class="col-md-6 well" >
 
         <!-- 1st row and only col in this row for the diagram title -->
-          <h1>Summary: Latitude vs X</h1>
-           
-          <figure class="float-left">
-            <img src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=300 width=300>
-          </figure>
-
-          <hr>    
+          <h1>Max Temperature</h1>
           
-          <p class="right-para">The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis we first pulled data from the Open Weather Map API, to assemble data on over 500 cities.</p>
-
-          <p class="right-para">After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <figure> 
+            <img class="img-responsive" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=400 width=500>
+          </figure>  
+          
+          <p class="margin-para"> Temperatures are warmer towards the equator, hovering close to 100F at the time this graph was plotted, and lower, closer to the poles, hovering around 50F, at the time of year this graph was plotted.</p>
            
          
       <!-- End of column 1 of 2 -->
-        </div><!-- <div class="col-md-6 well" > -->
-      
+      </div> <!-- div class="col-md-6 well" -->
 
       <!-- Latter of screen (4/12) -->
       <div class="col-md-4 well margin-left-20">
@@ -95,7 +89,7 @@
       	<div class="row margin-bottom-20">
       		<div class="col-md-4">
 
-	            <figure>
+	            <figure class = "fig-blue-border">
 	              <a href="MaxTemp.html">
 	              <img class = "img-responsive" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=200 width=200></a> 
 	            </figure> 
