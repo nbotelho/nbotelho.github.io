@@ -9,7 +9,7 @@
 
 <head>
 
-  <!-- <meta charset="UTF-8"> -->
+  <meta charset="UTF-8"> 
   <meta name="viewport" content="width device-width, initial-scale=1">
   <title>Comparison</title>
   
@@ -36,7 +36,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
        </button>
-        <a class="navbar-brand border-fill" href="index.html">Latitude</a>
+        <a class="navbar-brand" id="border-fill-comparison" border-fill" href="index.html">Latitude</a>
       </div> <!-- div class="navbar-header" -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,9 +68,8 @@
 
     <!-- First row for the title -->
     <div class="row">
-      <div class="col-md-10" >
-        <h1>Comparison: Latitude vs X</h1>
-        <hr> <!-- Use this to separate content in the HTML page -->
+      <div class="col-md-12" >
+        <h1 class="header-line">Comparison: Latitude vs X</h1>
       </div> <!-- <div class="col-md-12" > -->
     </div><!--  <div class="row"> --> 
 
@@ -78,8 +77,8 @@
 
     <!-- First row for the title -->
     <div class="row">
-      <div class="col-md-8" >
-        <p class="single-line">Click any plot to get an in-depth analysis</p>
+      <div class="col-md-12" >
+        <p >Click any plot to get an in-depth analysis</p>
       </div> <!-- <div class="col-md-12" > -->
     </div><!--  <div class="row"> --> 
 
@@ -87,21 +86,21 @@
     <div class="row">
 
       <!-- First col of row 2 -->
-      <div class="col-md-4" >
-          <h2>vs Max Temperature</h2>
+      <div class="col-md-6" >
+          <h2 class="override-margin">vs Max Temperature</h2>
           <figure>
             <a href="MaxTemp.html">
-            <img class = "img-responsive big-fig" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature"></a> 
+            <img class = "img-responsive" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature"></a> 
           </figure> 
       </div><!-- <div class="col-md-12 well"> -->  
       
     
       <!-- Second col of row 2 -->
-      <div class="col-md-4"> 
-         <h2>vs Humidity</h2>       
+      <div class="col-md-6"> 
+         <h2 class="override-margin">vs Humidity</h2>       
 	       <figure>
             <a href="Humidity.html">
-            <img class = "img-responsive big-fig" src= "LatvsHumidity.png" alt = "Latitude vs Humidity"></a> 
+            <img class = "img-responsive" src= "LatvsHumidity.png" alt = "Latitude vs Humidity"></a> 
           </figure>
     	</div>  <!-- div class = "col-md-6" -->
 
@@ -112,20 +111,20 @@
 
       <!-- First col of row 3 -->
 
-        <div class = "col-md-4"> 
+        <div class = "col-md-6"> 
           <h2 class="override-margin">vs Cloudiness</h2>
           <figure>
             <a href="Cloudiness.html">
-            <img class = "img-responsive big-fig" src= "LatvsCloudiness.png" alt = "Latitude vs Cloudiness"></a> 
+            <img class = "img-responsive" src= "LatvsCloudiness.png" alt = "Latitude vs Cloudiness"></a> 
           </figure> 
         </div> 
       
       <!-- Second col of row 3 -->
-      <div class="col-md-4"> 
+      <div class="col-md-6"> 
         <h2 class="override-margin">vs Wind Speed</h2>
 		    <figure>
             <a href="Windspeed.html">
-            <img class = "img-responsive big-fig" src= "LatvsWindSpeed.png" alt = "Latitude vs Windspeed"></a> 
+            <img class = "img-responsive" src= "LatvsWindSpeed.png" alt = "Latitude vs Windspeed"></a> 
         </figure>  
       </div> <!-- div class = "col-md-6" --> 
   

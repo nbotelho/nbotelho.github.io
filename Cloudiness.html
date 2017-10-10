@@ -30,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
        </button>
-        <a class="navbar-brand border-fill" href="index.html">Latitude</a>
+        <a class="navbar-brand" id="border-fill-cloudiness" href="index.html">Latitude</a>
       </div> <!-- div class="navbar-header" -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,12 +64,10 @@
       <!-- Columns have 12 areas of width to work with. -->
 
       <!-- Two-thirds of screen (8/12) -->
-      <div class="col-md-6 well" >
+      <div class="col-md-7 well" >
 
         <!-- 1st row and only col in this row for the diagram title -->
-          <h1>Cloudiness</h1>
-
-          <hr> <!-- Use this to separate content in the HTML page -->
+          <h1 class="header-line">Cloudiness</h1>
           
           <figure> 
             <img class="img-responsive" src= "LatvsCloudiness.png" alt = "Latitude vs Temperature" height=400 width=500>
@@ -82,47 +80,51 @@
       </div> <!-- div class="col-md-6 well" -->
 
       <!-- Latter of screen (4/12) -->
-      <div class="col-md-4 well margin-left-20">
+      <div class="col-md-4 well col-md-offset-1">
       	<div class="row">
-      		<div class="col-md-4">
-        		<h2>Visualizations</h2>
+      		<div class="col-md-12">
+        		<h2 class="header-line">Visualizations</h2>
       		</div>  
       	</div>
 
-      	<div class="row margin-bottom-20">
-      		<div class="col-md-4">
+      	<br><br>
 
-	            <figure>
-	              <a href="MaxTemp.html">
-	              <img class = "img-responsive" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=200 width=200></a> 
-	            </figure> 
-	        </div>  
+          <div class="row">
+        		<div class="col-md-6">
+
+  	            <figure>
+  	              <a href="MaxTemp.html">
+  	              <img class = "img-responsive" src= "LatvsMaxTemp.png" alt = "Latitude vs Temperature" height=200 width=200></a> 
+  	            </figure> 
+  	        </div>  
 	        
-	        <div class="col-md-4">       
-			    <figure >
-	              <a href="Humidity.html">
-	              <img class = "img-responsive" src= "LatvsHumidity.png" alt = "Latitude vs Humidity" height=200 width=200></a> 
-	            </figure>
-        	</div>  <!-- div class = "col-md-2" -->
-        </div>	
+  	        <div class="col-md-6">       
+  			        <figure >
+  	              <a href="Humidity.html">
+  	              <img class = "img-responsive" src= "LatvsHumidity.png" alt = "Latitude vs Humidity" height=200 width=200></a> 
+  	            </figure>
+          	</div>  <!-- div class = "col-md-6" -->
+          </div>	<!-- <div class="row"> -->
       
+        <br><br>  
+
         <div class="row">
         
-        	<div class = "col-md-4"> 
+        	<div class = "col-md-6"> 
 	          <figure class = "fig-blue-border">
 	            <a href="Cloudiness.html">
 	            <img class = "img-responsive" src= "LatvsCloudiness.png" alt = "Latitude vs Cloudiness" height=200 width=200></a> 
 	          </figure> 
 	        </div> 
 	        
-	        <div class="col-md-4"> 
-				<figure>
+	        <div class="col-md-6"> 
+				    <figure>
 		            <a href="Windspeed.html">
 		            <img class = "img-responsive" src= "LatvsWindSpeed.png" alt = "Latitude vs Windspeed" height=200 width=200></a> 
 		        </figure>  
 		    </div> <!-- div class = "col-md-2" --> 
-		</div> <!-- div class="well" -->
-	</div>	
+		</div> <!-- div class="row" -->
+	</div>	<!-- <div class="row"> -->
 
       <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
     </div> <!-- div class = "row" -->
