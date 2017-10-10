@@ -51,9 +51,6 @@ and the para and the outer box*/
   text-align: left;
 }
 
-.single-line {
-  margin-bottom: 20px;
-}
 
 .big-fig	{
 	height: 200;
@@ -77,10 +74,46 @@ p{
 }
 
 
-.border-fill	{
+#border-fill-humidity	{
 	border:	3px solid #00CED1;
 	background-color:	#00CED1;
-	font-color: white;
+	color: white;
+}
+
+#border-fill-cloudiness	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
+}
+
+#border-fill-data	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
+}
+
+#border-fill-index	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
+}
+
+#border-fill-windspeed	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
+}
+
+#border-fill-maxtemp	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
+}
+
+#border-fill-comparison	{
+	border:	3px solid #00CED1;
+	background-color:	#00CED1;
+	color: white;
 }
 
 .fig-blue-border	{
@@ -89,4 +122,13 @@ p{
 
 .float-left	{
 	float:left;
+}
+
+/*.humidity-header	{
+	border-bottom: 1px solid #00CED1;
+
+}*/
+
+.header-line {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.75);
 }
